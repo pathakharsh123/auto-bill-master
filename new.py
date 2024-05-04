@@ -23,7 +23,7 @@ def calculate_bill(detected_objects):
 
 
 def detect_objects(image):
-    model = YOLO('best 80.pt')
+    model = YOLO('bestnew.pt')
     results = model.predict(source=image)
     detected_objects = []  # List to store detected object names
     for result in results:
