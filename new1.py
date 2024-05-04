@@ -58,7 +58,7 @@ def app():
     capture_button = st.button("Capture Image from Webcam")
     if capture_button:
         # Specify the USB webcam source (change this value if necessary)
-        usb_camera_source = 1  # Change this value if your USB webcam is connected as the second camera
+        usb_camera_source = 0  # Change this value if your USB webcam is connected as the second camera
         image = capture_image(camera_source=usb_camera_source)
         if image is not None:
             st.image(image, caption='Captured Image', use_column_width=True)
